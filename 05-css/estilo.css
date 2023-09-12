@@ -1,0 +1,10 @@
+body {background-color: rgb(111, 181, 118);}
+table, td {border: 1px solid black}
+.primeira-linha {background-color: yellow}
+.segunda-linha {background-color:purple}
+.terceira-linha {background-color: red}
+p {border: 5px solid rgb(19, 11, 11);
+    padding: 20px;
+    margin: 50px;
+    border-radius:50px;
+  }

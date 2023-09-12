@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline e Interno</title>
+    <style>
+        body {background-color: rgb(181, 150, 111);}
+        table, td {border: 1px solid black}
+        .primeira-linha {background-color: yellow}
+        .segunda-linha {background-color:purple}
+        .terceira-linha {background-color: red}
+    </style>
+</head>
+<body>
+    <h1>Cabeçalho</h1>
+    <p style="background-color:green">Parágrafo um</p>
+    <p>Parágrafo dois</p>
+    <p>Parágrafo três</p>
+
+    <table>
+        <tr class="primeira-linha">
+            <td style="color:green" rowspan="3">A</td><td>B</td>
+        </tr>
+        <tr class="segunda-linha">
+            <td>D</td>
+        </tr>
+        <tr class="terceira-linha">
+            <td>F</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>A</td><td>B</td>
+        </tr>
+        <tr>
+            <td>C</td><td>D</td>
+        </tr>
+        <tr>
+            <td>E</td><td>F</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="2">A</td>
+        </tr>
+        <tr>
+            <td>C</td><td>D</td>
+        </tr>
+        <tr>
+            <td>E</td><td>F</td>
+        </tr>
+    </table>
+</body>
+</html>
