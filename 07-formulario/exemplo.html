@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="idnome">Nome</label>
+            <input type="text" id="idnome">
+            <br>
+            <label for="iddt">Data de Nascimento</label>
+            <input type="date" id="iddt">
+            <br>
+            <label for="idemail">E-mail</label>
+            <input type="email" id="idemail">
+            <br>
+            <label for="idfone">Telefone</label>
+            <input type="tel" id="idfone">
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <Label id="idcurso">Curso</Label>
+            <select>
+                <option>ADS</option>
+                <option>GTI</option>
+                <option>CD</option>
+                <option>SI</option>
+            </select>
+            <br>
+            <p>Semestre</p>
+            <input type="radio" name="semestre" value="1" id="idsem1" checked>
+            <label for="idsem1">1º</label>
+            <input type="radio" name="semestre" value="2" id="idsem2">
+            <label for="idsem2">2º</label>
+            <input type="radio" name="semestre" value="3" id="idsem3">
+            <label for="idsem3">3º</label>
+            <input type="radio" name="semestre" value="4" id="idsem4">
+            <label for="idsem4">4º</label>
+            <input type="radio" name="semestre" value="5" id="idsem5">
+            <label for="idsem5">5º</label>         
+        </fieldset>
+       <fieldset>
+        <label for="idtrab">Trabalha?</label>
+        <input type="checkbox" id="idtrab">
+        <br>
+        <label for="idloc">Local de trabalho</label>
+        <input type="text" id="idloc">
+        <br>
+        <label for="idexp">Descreva sua experiência</label>
+        <br>
+        <textarea id="idexp" rows="5" cols="80">
+
+        </textarea>
+       </fieldset>
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
