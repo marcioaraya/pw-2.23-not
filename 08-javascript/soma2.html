@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <label for="id_n1">Primeiro número:</label>
+    <input type="text" id="id_n1">
+    <br>
+    <label for="id_n2">Segundo número:</label>
+    <input type="text" id="id_n2">
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <br>
+    <p>Resultado: <span id="id_resultado"></span></p>
+    
+    <script>
+        function calcular() {
+            var n1 = parseInt(document.getElementById('id_n1').value);
+            var n2 = parseInt(document.getElementById('id_n2').value);
+            
+            var soma = n1 + n2;
+
+            document.getElementById('id_resultado').innerHTML = soma;
+        }
+    </script>
+</body>
+</html>
