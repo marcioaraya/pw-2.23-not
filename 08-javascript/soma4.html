@@ -14,17 +14,23 @@
     <label for="id_n2">Segundo número:</label>
     <input type="text" id="id_n2">
     <br>
-    <button onclick="calcular()">Calcular</button>
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
     <br>
     <p>Resultado: <input type="text" id="id_resultado" disabled></p>
     <!-- disabled para usuário não poder alterar -->
     <script>
-        function calcular() {
-            // parseInt converte para inteiro
+        function somar() {
             var n1 = parseInt(document.getElementById('id_n1').value);
             var n2 = parseInt(document.getElementById('id_n2').value);
-            var soma = n1 + n2;
-            document.getElementById('id_resultado').value = soma;
+            var res = n1 + n2;
+            document.getElementById('id_resultado').value = res;
+        }
+        function subtrair() {
+            var n1 = parseInt(document.getElementById('id_n1').value);
+            var n2 = parseInt(document.getElementById('id_n2').value);
+            var res = n1 - n2;
+            document.getElementById('id_resultado').value = res;
         }
     </script>
 </body>
