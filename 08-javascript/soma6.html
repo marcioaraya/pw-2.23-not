@@ -8,18 +8,22 @@
 </head>
 <body>
     <h1>Javascript</h1>
+    <p>Altere o código HTML e Javascript para que a operação
+        a ser realizada seja escolhida usando o elemento &lt;input&gt;
+        e type="radio" </p>
+    <p>O cálculo deve ser efetuado quando a operação for selecionada.</p>
+    <p>Pesquise qual é o evento que deve ser capturado para efetuar a operação</p>
+    <div style="border:1px solid black; width=50%">
+    <image src="soma-botao-radio.png" width="40%">
+    </div>
+    <h1>Calculadora</h1>
     <label for="id_n1">Primeiro número:</label>
     <input type="text" id="id_n1">
     <br>
     <label for="id_n2">Segundo número:</label>
     <input type="text" id="id_n2">
     <br>
-    <button onclick="somar()">Somar</button>
-    <button onclick="subtrair()">Subtrair</button>
-    <!-- acrescente os botões para efetuar os cálculos de divisão e multiplicação 
-         ATENÇÃO: o javascript não aceita ç e caracteres acentuados no nome de função 
-        -->
-    <br>
+
     <p>Resultado: <input type="text" id="id_resultado" disabled></p>
     <!-- disabled para usuário não poder alterar -->
     <script>
