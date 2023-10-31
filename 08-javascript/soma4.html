@@ -15,7 +15,9 @@
     <input type="text" id="id_n2">
     <br>
     <button onclick="somar()">Somar</button>
-    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="subtracao()">Subtração</button>
+    <button onclick="multiplicacao()">Multiplicação</button>
+    <button onclick="divisao()">Divisão</button>
     <!-- acrescente os botões para efetuar os cálculos de divisão e multiplicação 
          ATENÇÃO: o javascript não aceita ç e caracteres acentuados no nome de função 
         -->
@@ -29,12 +31,25 @@
             var res = n1 + n2;
             document.getElementById('id_resultado').value = res;
         }
-        function subtrair() {
+        function subtracao() {
             var n1 = parseInt(document.getElementById('id_n1').value);
             var n2 = parseInt(document.getElementById('id_n2').value);
             var res = n1 - n2;
             document.getElementById('id_resultado').value = res;
         }
+        function multiplicacao() {
+            var n1 = parseInt(document.getElementById('id_n1').value);
+            var n2 = parseInt(document.getElementById('id_n2').value);
+            var res = n1 * n2;
+            document.getElementById('id_resultado').value = res;
+        }
+        function divisao() {
+            var n1 = parseInt(document.getElementById('id_n1').value);
+            var n2 = parseInt(document.getElementById('id_n2').value);
+            var res = n1 / n2;
+            document.getElementById('id_resultado').value = res;
+        }
+
         // escreva o código para calcular a divisão e a multiplicação
         // no caso da divisão, coloque um teste (if/else) para dar uma mensagem
         // informando que não é possível dividir por zero

@@ -20,16 +20,24 @@
     <label for="id_n2">Segundo número:</label>
     <input type="text" id="id_n2">
     <br>
-    <select>
-        <option>Somar</option>
-        <option>Subtrair</option>
-        <option>Dividir</option>
-        <option>Multiplicar</option>
+    <select id="id_operacao" onchange="calcular(this.value)">
+        <option value="1">Somar</option>
+        <option value="2">Subtrair</option>
+        <option value="3">Dividir</option>
+        <option value="4">Multiplicar</option>
     </select>
 <br><br><br><br><br><br>
     <p>Resultado: <input type="text" id="id_resultado" disabled></p>
     <!-- disabled para usuário não poder alterar -->
     <script>
+        function calcular(op){
+            //alert('Opção: '+op);
+            if (op=="1") {
+                somar();
+            } else if (op=="2") {
+                subtrair();
+            }
+        }
         function somar() {
             var n1 = parseInt(document.getElementById('id_n1').value);
             var n2 = parseInt(document.getElementById('id_n2').value);
