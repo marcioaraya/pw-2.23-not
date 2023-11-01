@@ -18,18 +18,23 @@
 </div>
 <script>
 function loadDoc() {
-    // cria objeto XMLHttpRequest
+  // obtém o CEP digitado - não faz nenhuma validação
+  // para simplificar vamos acreditar que o usuário informará um CEP válido
   let cep =  parseInt(document.getElementById("cep").value); 
+  
+  // cria objeto XMLHttpRequest que será usado na chamada AJAX
   var xhttp = new XMLHttpRequest();
 
   // prepara o tratamento da resposta
   xhttp.onreadystatechange = function() {
+    // exibe mudanças no valor do readyState
+    console.log(this.readyState);
       // readState 4 = resposta recebida
       // status 200 = resposta OK
-    console.log(this.readyState);
     if (this.readyState == 4 && this.status == 200) {
 
       let endereco = JSON.parse(this.responseText); 
+      // console.log envia mensagens que serão exibidas no console do navegador
       console.log('resposta recebida - status OK');
       console.log(this.responseText);
       document.getElementById("logradouro").value=endereco.logradouro;
